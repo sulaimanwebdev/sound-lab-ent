@@ -88,7 +88,7 @@ const Slider = () => {
             return (
               <SwiperSlide
                 key={ele.id}
-                className='transition rounded-lg block overflow-hidden relative px-5 mt-7 md:mt-0'
+                className='transition rounded-lg block overflow-hidden relative px-5 mt-14 md:mt-0'
               >
                 <div className='flex items-center justify-center flex-col text-center max-w-[800px] mx-auto'>
                  <img src="/images/stars.svg" className='w-[130px] mb-4' alt="stars" />

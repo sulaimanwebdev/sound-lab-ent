@@ -11,6 +11,11 @@ module.exports = {
       },
 
       screens:{
+        'sm3': '396px',
+        'sm2': '354px',
+        'md2': '790px',
+        'lg4': '844px',
+        'lg3': '876px',
         'lg2': '954px',
       }
     },

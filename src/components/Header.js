@@ -1,7 +1,6 @@
 import {useState} from 'react'
 
 const Header = () => {
-
   const [menu, setmenu] = useState('translate-x-full');
 
   return (
