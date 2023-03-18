@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Slider from "./components/Slider";
 
 export default function App() {
   return (
@@ -118,12 +119,14 @@ export default function App() {
 
 
 
-       <div className="mt-36">
+       <div className="relative mt-36">
        <div className="relative mb-12">
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-10 z-20 text-[#FDF0C8] leading-none">What people say</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
-       <div className="text-center leading-[26px]">From classic hits to modern jams, we have an extensive collection of music that caters to every age group and genre. Our sound engineers use the latest technology and equipment to ensure that the sound quality is crystal clear and impactful.<br/><br/>Our DJ services go beyond just playing music, we also provide a range of lighting and visual effects that add to the overall experience. We work closely with event planners and organizers to ensure that everything runs smoothly and seamlessly.<br/><br/>In short, Sound Lab Entertainment is your one-stop-shop for all your DJ needs. We bring a touch of creativity, expertise, and innovation to every event we DJ, and we guarantee that your guests will be talking about the music for weeks to come.</div>
+       
+         <Slider/>
+
        </div>
 
 
