@@ -129,22 +129,90 @@ export default function App() {
 
 
        <div className="relative mt-32">
-       <div className="relative mb-12">
+       <div className="relative mb-16">
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-10 z-20 text-[#FDF0C8] leading-none">Our Affiliates</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
 
        <div className="flex justify-between gap-6">
+
          <div className="flex items-center justify-center flex-col text-center">
-          <img src="/images/affliate1.png" alt="Affliate" className="w-[250px]" />
+          <img src="/images/affliate1.png" alt="Affliate" className="w-[220px]" />
           <div className="text-[#C29A54] font-[700] text-[21px] mt-4">Nicole | Photographer</div>
           <div className="mt-1 text-[#FDF0C8]">Passionate photographer capturing life's moments, creating friendships, and celebrating milestones!</div>
           <a href="#" className="mt-7"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9.5C1 7.37827 1.84285 5.34344 3.34315 3.84315C4.84344 2.34285 6.87827 1.5 9 1.5H25C27.1217 1.5 29.1566 2.34285 30.6569 3.84315C32.1571 5.34344 33 7.37827 33 9.5V25.5C33 27.6217 32.1571 29.6566 30.6569 31.1569C29.1566 32.6571 27.1217 33.5 25 33.5H9C6.87827 33.5 4.84344 32.6571 3.34315 31.1569C1.84285 29.6566 1 27.6217 1 25.5V9.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 17.5C11 19.0913 11.6321 20.6174 12.7574 21.7426C13.8826 22.8679 15.4087 23.5 17 23.5C18.5913 23.5 20.1174 22.8679 21.2426 21.7426C22.3679 20.6174 23 19.0913 23 17.5C23 15.9087 22.3679 14.3826 21.2426 13.2574C20.1174 12.1321 18.5913 11.5 17 11.5C15.4087 11.5 13.8826 12.1321 12.7574 13.2574C11.6321 14.3826 11 15.9087 11 17.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
          </div>
-       </div>
-         
+
+         <div className="flex items-center justify-center flex-col text-center">
+          <img src="/images/affliate2.png" alt="Affliate" className="w-[220px]" />
+          <div className="text-[#C29A54] font-[700] text-[21px] mt-4">SoundLab Studio 15</div>
+          <div className="mt-1 text-[#FDF0C8]">Sound Lab Studio 15: High-quality recordings for special moments, with pro audio engineers & cozy vibes.</div>
+          <a href="#" className="mt-7"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9.5C1 7.37827 1.84285 5.34344 3.34315 3.84315C4.84344 2.34285 6.87827 1.5 9 1.5H25C27.1217 1.5 29.1566 2.34285 30.6569 3.84315C32.1571 5.34344 33 7.37827 33 9.5V25.5C33 27.6217 32.1571 29.6566 30.6569 31.1569C29.1566 32.6571 27.1217 33.5 25 33.5H9C6.87827 33.5 4.84344 32.6571 3.34315 31.1569C1.84285 29.6566 1 27.6217 1 25.5V9.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 17.5C11 19.0913 11.6321 20.6174 12.7574 21.7426C13.8826 22.8679 15.4087 23.5 17 23.5C18.5913 23.5 20.1174 22.8679 21.2426 21.7426C22.3679 20.6174 23 19.0913 23 17.5C23 15.9087 22.3679 14.3826 21.2426 13.2574C20.1174 12.1321 18.5913 11.5 17 11.5C15.4087 11.5 13.8826 12.1321 12.7574 13.2574C11.6321 14.3826 11 15.9087 11 17.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+         </div>
+
+         <div className="flex items-center justify-center flex-col text-center">
+          <img src="/images/affliate3.png" alt="Affliate" className="w-[220px]" />
+          <div className="text-[#C29A54] font-[700] text-[21px] mt-4">Kahryssa |  Photographer</div>
+          <div className="mt-1 text-[#FDF0C8]">Kahryssa, capturing love & art, excited for new & returning clients! Grateful for connections & support.</div>
+          <a href="#" className="mt-7"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9.5C1 7.37827 1.84285 5.34344 3.34315 3.84315C4.84344 2.34285 6.87827 1.5 9 1.5H25C27.1217 1.5 29.1566 2.34285 30.6569 3.84315C32.1571 5.34344 33 7.37827 33 9.5V25.5C33 27.6217 32.1571 29.6566 30.6569 31.1569C29.1566 32.6571 27.1217 33.5 25 33.5H9C6.87827 33.5 4.84344 32.6571 3.34315 31.1569C1.84285 29.6566 1 27.6217 1 25.5V9.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 17.5C11 19.0913 11.6321 20.6174 12.7574 21.7426C13.8826 22.8679 15.4087 23.5 17 23.5C18.5913 23.5 20.1174 22.8679 21.2426 21.7426C22.3679 20.6174 23 19.0913 23 17.5C23 15.9087 22.3679 14.3826 21.2426 13.2574C20.1174 12.1321 18.5913 11.5 17 11.5C15.4087 11.5 13.8826 12.1321 12.7574 13.2574C11.6321 14.3826 11 15.9087 11 17.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+         </div>
 
        </div>
+       </div>
+
+
+
+
+       <div className="relative mt-36">
+       <div className="relative mb-10">
+        <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-10 z-20 text-[#FDF0C8] leading-none">Contact us</div>
+        <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
+       </div>
+         <div className="text-center text-[#FFFCF5CC] mb-6">For business inquiries please fill this form</div>
+         <div className="w-full max-w-[800px] mx-auto">
+
+           <div className="grid grid-cols-[1fr,160px] gap-3">
+             <div>
+               <div className="text-[17px] mb-1.5">Name <span className="text-[#F63232]">*</span></div>
+               <input type="text" placeholder="Enter your name" className="w-full bg-[#151413] rounded-[4px] placeholder-[#9D9690] text-white px-3 py-3 ring-[#FFE38F]" />
+             </div>
+
+             <div>
+               <div className="text-[17px] mb-1.5">Title <span className="text-[#F63232]">*</span></div>
+               <select style={{backgroundImage: "url(/images/arrow.svg)"}} className="cursor-pointer w-full bg-[#151413] rounded-[4px] text-[#9D9690] px-3 py-3 ring-[#FFE38F]">
+                <option>Select</option>
+                <option>Select 1</option>
+                <option>Select 2</option>
+               </select>
+               
+             </div>
+           </div>
+
+           <div className="mt-7">
+               <div className="text-[17px] mb-1.5">Email <span className="text-[#F63232]">*</span></div>
+               <input type="email" placeholder="Enter your email" className="w-full bg-[#151413] rounded-[4px] placeholder-[#9D9690] text-white px-3 py-3 ring-[#FFE38F]" />
+           </div>
+
+           <div className="mt-7">
+               <div className="text-[17px] mb-1.5">Message <span className="text-[#F63232]">*</span></div>
+               <textarea placeholder="Anything I can help? Let me know" className="resize-none min-h-[230px] w-full bg-[#151413] rounded-[4px] placeholder-[#9D9690] text-white px-3 py-3 ring-[#FFE38F]"></textarea>
+           </div>
+
+           <button className="flex items-center justify-center py-3 rounded-[4px] w-full mt-4 bg-[#FFE38F] text-[#000201] text-[18px]">Send</button>
+
+
+
+         </div>
+       </div>
+
+
+
+       <div className="flex items-center justify-center flex-col gap-3 mt-24 mb-5">
+          <button className="mb-1"><img src="/images/logo.svg" alt="logo" /></button>
+          <div>© 2023 Sound Lab Entertainment. All rights reserved.</div>
+       </div>
+
+
 
 
 
