@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Slider2 from "./components/Slider2";
 import Fade from 'react-reveal/Fade';
+import Slider3 from "./components/Slider3";
 
 export default function App() {
 
@@ -97,26 +98,31 @@ export default function App() {
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
        <Fade bottom>
-       <div className="grid grid-cols-1 lg3:grid-cols-2 gap-3">
+       <div className="hidden lg3:grid grid-cols-1 lg3:grid-cols-2 gap-3">
          <div className="grid sm:grid-rows-[370px,300px] gap-3">
-            <img src="/images/image1.png" className="w-full h-full object-cover object-center mb-3" />
-            <img src="/images/image2.png" className="w-full h-full object-cover object-center" />
+            <img src="/images/image1.png" className="transition hover:scale-95 w-full h-full object-cover object-center mb-3" />
+            <img src="/images/image2.png" className="transition hover:scale-95 w-full h-full object-cover object-center" />
          </div>
 
          <div className="grid sm:grid-rows-[200px,470px] gap-3">
          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 h-full overflow-hidden">
-         <img src="/images/image4.png" className="w-full h-full object-cover object-center" />
-         <img src="/images/image3.png" className="w-full h-full object-cover object-center" />
+         <img src="/images/image4.png" className="transition hover:scale-95 w-full h-full object-cover object-center" />
+         <img src="/images/image3.png" className="transition hover:scale-95 w-full h-full object-cover object-center" />
          </div>
          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 h-full overflow-hidden">
-         <img src="/images/image5.png" className="w-full h-full object-cover object-center" />
-         <img src="/images/image6.png" className="w-full h-full object-cover object-center" />
+         <img src="/images/image5.png" className="transition hover:scale-95 w-full h-full object-cover object-center" />
+         <img src="/images/image6.png" className="transition hover:scale-95 w-full h-full object-cover object-center" />
 
          </div>
 
          </div>
 
        </div>
+
+       <div className="lg3:hidden">
+       <Slider3/>
+       </div>
+
        </Fade>
        </div>
 
@@ -124,7 +130,7 @@ export default function App() {
 
 
 
-       <div id="about" className="relative mt-36">
+       <div id="about" className="relative mt-28 lg3:mt-36">
        <div className="relative mb-12">
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-5 sm:px-10 z-20 text-[#FDF0C8] leading-none">What people say</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
