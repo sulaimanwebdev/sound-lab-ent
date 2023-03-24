@@ -4,10 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth !important;
+}
+
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
   background: black;
+  scroll-behavior: smooth;
 }
 
 .mainCont{

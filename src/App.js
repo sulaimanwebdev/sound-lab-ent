@@ -1,18 +1,20 @@
 import Header from "./components/Header";
 import Slider from "./components/Slider";
+import Slider2 from "./components/Slider2";
 
 export default function App() {
+
   return (
     <>
-      <div className="relative w-full mb-28 md:mb-32">
+      <div id="home" className="relative w-full mb-28 md:mb-30">
          <div className="relative z-30 w-full">
           <Header/>
           <div className="mainCont flex items-center justify-center flex-col text-center py-12">
             <img src="/images/logo2.png" alt="logo" />
             <div className="text-main2 text-[18px] mt-5 max-w-[700px] mb-10">Tailoring Custom Packages to Suit Your Needs: Personalized Pricing Based on Your Unique Service Requirements</div>
             <div className="flex items-center justify-center flex-col sm2:flex-row gap-3 mb-14 w-full">
-              <button className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm2:w-fit flex items-center justify-center gap-3">Book Now <svg width="18" height="13" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 13.9L23 7.5L17.1 1M23 7.4H0" stroke="black" stroke-width="1.5"/></svg></button>
-              <button className="bg-transparent border-2 border-[#FFF5E4] px-6 py-[10px] rounded-[4px] text-[#FFF5E4] w-full sm2:w-fit flex items-center justify-center gap-3">Call Now <svg width="18" height="13" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 13.9L23 7.5L17.1 1M23 7.4H0" stroke="#FFF5E4" stroke-width="1.5"/></svg></button>
+              <a href="#contact" className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm2:w-fit flex items-center justify-center gap-3">Book Now <svg width="18" height="13" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 13.9L23 7.5L17.1 1M23 7.4H0" stroke="black" stroke-width="1.5"/></svg></a>
+              <a href="tel:+123456789" className="bg-transparent border-2 border-double border-[#FFF5E4] px-6 py-[10px] rounded-[4px] text-[#FFF5E4] w-full sm2:w-fit flex items-center justify-center gap-3">Call Now <svg width="18" height="13" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 13.9L23 7.5L17.1 1M23 7.4H0" stroke="#FFF5E4" stroke-width="1.5"/></svg></a>
             </div>
 
             <div className="text-white uppercase text-[20px] mb-6">Find US on Social Media</div>
@@ -28,35 +30,35 @@ export default function App() {
       </div>
 
 
-      <div className="mainCont text-white">
+      <div id="services" className="mainCont text-white pt-2">
       <div className="relative mb-16">
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-5 sm:px-10 z-20 text-[#FDF0C8] leading-none">Our Services</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
       </div>
 
        <div>
-       <div className="flex items-start gap-6 w-full flex-col md2:flex-row mb-10">
+       <div id="wedding" className="flex items-start gap-6 w-full flex-col md2:flex-row mb-10">
         <img src="/images/wedding1.png" alt="wedding" className="w-full md2:w-[350px]" />
         <div>
           <div className="text-main2 text-[28px] sm:text-[36px] uppercase font-[500] mb-2">Weddings</div>
           <div className="leading-[26px]">We offer a personalized approach to ensure that your special day is everything you've dreamed of and more. We work closely with you to create the perfect soundtrack for your ceremony, cocktail hour, and reception, and our professional DJs will keep the dance floor packed all night long.</div>
           <div className="flex flex-col sm3:flex-row gap-3 mt-8">
-              <button className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm3:w-fit">Get a quote</button>
-              <button className="bg-transparent border-2 border-main px-6 py-[10px] rounded-[4px] text-main w-full sm3:w-fit">Call Now</button>
+              <a href="#contact" className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm3:w-fit">Get a quote</a>
+              <a href="tel:+123456789" className="bg-transparent border-2 border-double border-main px-6 py-[10px] rounded-[4px] text-main w-full sm3:w-fit">Call Now</a>
           </div>
         </div>
        </div>
 
        <div className="w-full h-[1px] bg-[#FFE38F1F] mb-10"></div>
 
-       <div className="flex items-start gap-6 w-full flex-col md2:flex-row mb-10">
+       <div id="event" className="flex items-start gap-6 w-full flex-col md2:flex-row mb-10">
         <img src="/images/wedding2.png" alt="wedding" className="w-full md2:w-[350px]" />
         <div>
           <div className="text-main2 text-[28px] sm:text-[36px] uppercase font-[500] mb-2">Corporate Events</div>
           <div className="leading-[26px]">We understand the importance of making a lasting impression on your clients or employees. That's why we offer a variety of music and entertainment options, including customized playlists and live performances, to create a memorable and engaging experience.</div>
           <div className="flex flex-col sm3:flex-row gap-3 mt-8">
-            <button className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm3:w-fit">Get a quote</button>
-            <button className="bg-transparent border-2 border-main px-6 py-[10px] rounded-[4px] text-main w-full sm3:w-fit">Book a consultation</button>
+            <a href="#contact" className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm3:w-fit">Get a quote</a>
+            <a href="#contact" className="bg-transparent border-2 border-double border-main px-6 py-[10px] rounded-[4px] text-main w-full sm3:w-fit">Book a consultation</a>
           </div>
         </div>
        </div>
@@ -69,8 +71,8 @@ export default function App() {
           <div className="text-main2 text-[28px] sm:text-[36px] uppercase font-[500] mb-2">Other Events</div>
           <div className="leading-[26px]">Whether it's a birthday party, school event, Christmas party, stag and doe, fundraiser, or private event, we have the experience and expertise to make it a success. Our DJs are skilled at reading the crowd and playing the perfect mix of music to keep your guests entertained and engaged.</div>
           <div className="flex flex-col sm3:flex-row gap-3 mt-8">
-            <button className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm3:w-fit">Get a quote</button>
-            <button className="bg-transparent border-2 border-main px-6 py-[10px] rounded-[4px] text-main w-full sm3:w-fit">Book a consultation</button>
+            <a href="#contact" className="btnBackground px-6 py-3 rounded-[4px] text-black w-full sm3:w-fit">Get a quote</a>
+            <a href="#contact" className="bg-transparent border-2 border-double border-main px-6 py-[10px] rounded-[4px] text-main w-full sm3:w-fit">Book a consultation</a>
           </div>
         </div>
        </div>
@@ -119,7 +121,7 @@ export default function App() {
 
 
 
-       <div className="relative mt-36">
+       <div id="about" className="relative mt-36">
        <div className="relative mb-12">
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-5 sm:px-10 z-20 text-[#FDF0C8] leading-none">What people say</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
@@ -134,36 +136,12 @@ export default function App() {
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
 
-       <div className="flex flex-col lg4:flex-row lg4:justify-between gap-16 lg4:gap-6">
-
-         <div className="flex items-center justify-center flex-col text-center">
-          <img src="/images/affliate1.png" alt="Affliate" className="w-[220px]" />
-          <div className="text-[#C29A54] font-[700] text-[21px] mt-4">Nicole | Photographer</div>
-          <div className="mt-1 text-[#FDF0C8] max-w-[600px] mx-auto">Passionate photographer capturing life's moments, creating friendships, and celebrating milestones!</div>
-          <a href="#" className="mt-7"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9.5C1 7.37827 1.84285 5.34344 3.34315 3.84315C4.84344 2.34285 6.87827 1.5 9 1.5H25C27.1217 1.5 29.1566 2.34285 30.6569 3.84315C32.1571 5.34344 33 7.37827 33 9.5V25.5C33 27.6217 32.1571 29.6566 30.6569 31.1569C29.1566 32.6571 27.1217 33.5 25 33.5H9C6.87827 33.5 4.84344 32.6571 3.34315 31.1569C1.84285 29.6566 1 27.6217 1 25.5V9.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 17.5C11 19.0913 11.6321 20.6174 12.7574 21.7426C13.8826 22.8679 15.4087 23.5 17 23.5C18.5913 23.5 20.1174 22.8679 21.2426 21.7426C22.3679 20.6174 23 19.0913 23 17.5C23 15.9087 22.3679 14.3826 21.2426 13.2574C20.1174 12.1321 18.5913 11.5 17 11.5C15.4087 11.5 13.8826 12.1321 12.7574 13.2574C11.6321 14.3826 11 15.9087 11 17.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-         </div>
-
-         <div className="flex items-center justify-center flex-col text-center">
-          <img src="/images/affliate2.png" alt="Affliate" className="w-[220px]" />
-          <div className="text-[#C29A54] font-[700] text-[21px] mt-4">SoundLab Studio 15</div>
-          <div className="mt-1 text-[#FDF0C8] max-w-[600px] mx-auto">Sound Lab Studio 15: High-quality recordings for special moments, with pro audio engineers & cozy vibes.</div>
-          <a href="#" className="mt-7"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9.5C1 7.37827 1.84285 5.34344 3.34315 3.84315C4.84344 2.34285 6.87827 1.5 9 1.5H25C27.1217 1.5 29.1566 2.34285 30.6569 3.84315C32.1571 5.34344 33 7.37827 33 9.5V25.5C33 27.6217 32.1571 29.6566 30.6569 31.1569C29.1566 32.6571 27.1217 33.5 25 33.5H9C6.87827 33.5 4.84344 32.6571 3.34315 31.1569C1.84285 29.6566 1 27.6217 1 25.5V9.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 17.5C11 19.0913 11.6321 20.6174 12.7574 21.7426C13.8826 22.8679 15.4087 23.5 17 23.5C18.5913 23.5 20.1174 22.8679 21.2426 21.7426C22.3679 20.6174 23 19.0913 23 17.5C23 15.9087 22.3679 14.3826 21.2426 13.2574C20.1174 12.1321 18.5913 11.5 17 11.5C15.4087 11.5 13.8826 12.1321 12.7574 13.2574C11.6321 14.3826 11 15.9087 11 17.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-         </div>
-
-         <div className="flex items-center justify-center flex-col text-center">
-          <img src="/images/affliate3.png" alt="Affliate" className="w-[220px]" />
-          <div className="text-[#C29A54] font-[700] text-[21px] mt-4">Kahryssa |  Photographer</div>
-          <div className="mt-1 text-[#FDF0C8] max-w-[600px] mx-auto">Kahryssa, capturing love & art, excited for new & returning clients! Grateful for connections & support.</div>
-          <a href="#" className="mt-7"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9.5C1 7.37827 1.84285 5.34344 3.34315 3.84315C4.84344 2.34285 6.87827 1.5 9 1.5H25C27.1217 1.5 29.1566 2.34285 30.6569 3.84315C32.1571 5.34344 33 7.37827 33 9.5V25.5C33 27.6217 32.1571 29.6566 30.6569 31.1569C29.1566 32.6571 27.1217 33.5 25 33.5H9C6.87827 33.5 4.84344 32.6571 3.34315 31.1569C1.84285 29.6566 1 27.6217 1 25.5V9.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 17.5C11 19.0913 11.6321 20.6174 12.7574 21.7426C13.8826 22.8679 15.4087 23.5 17 23.5C18.5913 23.5 20.1174 22.8679 21.2426 21.7426C22.3679 20.6174 23 19.0913 23 17.5C23 15.9087 22.3679 14.3826 21.2426 13.2574C20.1174 12.1321 18.5913 11.5 17 11.5C15.4087 11.5 13.8826 12.1321 12.7574 13.2574C11.6321 14.3826 11 15.9087 11 17.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-         </div>
-
-       </div>
+       <Slider2/>
        </div>
 
 
 
-
-       <div className="relative mt-36">
+       <div id="contact" className="relative mt-36">
        <div className="relative mb-10">
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-5 sm:px-10 z-20 text-[#FDF0C8] leading-none">Contact us</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
