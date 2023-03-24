@@ -10,31 +10,31 @@ const Header = () => {
       <div className="mainCont flex items-center justify-between gap-5 text-white py-2.5">
          <button><img src="/images/logo.svg" alt="logo" /></button>
          <div className={`${menu} lg2:translate-x-0 fixed top-0 right-0 lg2:relative lg2:top-auto lg2:right-auto lg2:w-auto w-full min-h-screen lg2:min-h-fit px-[25px] pt-16 bg-black lg2:bg-transparent lg2:pt-0 lg2:px-0 flex items-start lg2:items-center flex-col lg2:flex-row gap-10 transition`}>
-            <a href="#home" className={`transition hover:-translate-y-[3px] uppercase border-main ${border === 'home' ? "border-b-2 border-double lg2:px-3.5 lg2:pb-2 lg2:translate-y-[6px]" : ""}`}><div
+            <a href="#home" className={`transition hover:-translate-y-[3px] uppercase border-main`}><div
              onClick={()=> {
               setborder('home')
               setmenu('translate-x-full')
              }}
             >Home</div></a>
-            <a href="#services" className={`uppercase transition hover:-translate-y-[3px] border-main ${border === 'services' ? "border-b-2 border-double lg2:px-3.5 lg2:pb-2 lg2:translate-y-[6px]" : ""} `}><div 
+            <a href="#services" className={`uppercase transition hover:-translate-y-[3px] border-main`}><div 
             onClick={()=> {
               setborder('services')
               setmenu('translate-x-full')
              }}
             >Services</div></a>
-            <a href="#wedding" className={`uppercase transition hover:-translate-y-[3px] border-main ${border === 'wedding' ? "border-b-2 border-double lg2:px-3.5 lg2:pb-2 lg2:translate-y-[6px]" : ""} `}><div 
+            <a href="#wedding" className={`uppercase transition hover:-translate-y-[3px] border-main`}><div 
             onClick={()=> {
               setborder('wedding')
               setmenu('translate-x-full')
              }}
             >Wedding</div></a>
-            <a href="#about" className={`uppercase transition hover:-translate-y-[3px] border-main ${border === 'about' ? "border-b-2 border-double lg2:px-3.5 lg2:pb-2 lg2:translate-y-[6px]" : ""} `}><div
+            <a href="#about" className={`uppercase transition hover:-translate-y-[3px] border-main`}><div
             onClick={()=> {
               setborder('about')
               setmenu('translate-x-full')
              }}
             >About</div></a>
-            <a href="#event" className={`uppercase transition hover:-translate-y-[3px] border-main ${border === 'event' ? "border-b-2 border-double lg2:px-3.5 lg2:pb-2 lg2:translate-y-[6px]" : ""} `}><div 
+            <a href="#event" className={`uppercase transition hover:-translate-y-[3px] border-main`}><div
             onClick={()=> {
               setborder('event')
               setmenu('translate-x-full')
