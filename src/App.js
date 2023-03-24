@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Slider2 from "./components/Slider2";
+import Fade from 'react-reveal/Fade';
 
 export default function App() {
 
@@ -37,6 +38,7 @@ export default function App() {
       </div>
 
        <div>
+       <Fade bottom>
        <div id="wedding" className="flex items-start gap-6 w-full flex-col md2:flex-row mb-10">
         <img src="/images/wedding1.png" alt="wedding" className="w-full md2:w-[350px]" />
         <div>
@@ -48,9 +50,9 @@ export default function App() {
           </div>
         </div>
        </div>
-
+       </Fade>
        <div className="w-full h-[1px] bg-[#FFE38F1F] mb-10"></div>
-
+       <Fade bottom>
        <div id="event" className="flex items-start gap-6 w-full flex-col md2:flex-row mb-10">
         <img src="/images/wedding2.png" alt="wedding" className="w-full md2:w-[350px]" />
         <div>
@@ -62,9 +64,9 @@ export default function App() {
           </div>
         </div>
        </div>
-
+       </Fade>
        <div className="w-full h-[1px] bg-[#FFE38F1F] mb-10"></div>
-
+       <Fade bottom>
        <div className="flex items-start gap-6 w-full flex-col md2:flex-row">
         <img src="/images/wedding3.png" alt="wedding" className="w-full md2:w-[350px]" />
         <div>
@@ -76,6 +78,7 @@ export default function App() {
           </div>
         </div>
        </div>
+       </Fade>
        </div>
 
   
@@ -93,7 +96,7 @@ export default function App() {
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-5 sm:px-10 z-20 text-[#FDF0C8] leading-none">Galleries</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
-
+       <Fade bottom>
        <div className="grid grid-cols-1 lg3:grid-cols-2 gap-3">
          <div className="grid sm:grid-rows-[370px,300px] gap-3">
             <img src="/images/image1.png" className="w-full h-full object-cover object-center mb-3" />
@@ -114,7 +117,7 @@ export default function App() {
          </div>
 
        </div>
-       
+       </Fade>
        </div>
 
 
@@ -126,7 +129,9 @@ export default function App() {
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-5 sm:px-10 z-20 text-[#FDF0C8] leading-none">What people say</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
+       <Fade bottom>
          <Slider/>
+       </Fade>
        </div>
 
 
@@ -135,8 +140,9 @@ export default function App() {
         <div className="customFont relative text-[30px] font-[600] bg-black w-fit mx-auto text-center px-5 sm:px-10 z-20 text-[#FDF0C8] leading-none">Our Affiliates</div>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
-
+       <Fade bottom>
        <Slider2/>
+       </Fade>
        </div>
 
 
@@ -147,6 +153,7 @@ export default function App() {
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-[1px] bg-main"></div>
        </div>
          <div className="text-center text-[#FFFCF5CC] mb-6">For business inquiries please fill this form</div>
+         <Fade bottom>
          <div className="w-full max-w-[800px] mx-auto">
 
            <div className="grid grid-cols-1 sm3:grid-cols-[1fr,160px] gap-7 sm3:gap-3">
@@ -178,9 +185,8 @@ export default function App() {
 
            <button className="flex items-center justify-center py-3 rounded-[4px] w-full mt-4 bg-[#FFE38F] text-[#000201] text-[18px] transition hover:-translate-y-[3px]">Send</button>
 
-
-
          </div>
+         </Fade>
        </div>
 
 
